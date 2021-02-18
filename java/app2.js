@@ -116,3 +116,12 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].makeCells();
 }
 makeFooter();
+
+let buttunClickHere = getElementById('buttun1');
+buttunClickHere.addEventListener('click', makePargraphForClik);
+
+function makePargraphForClik() {
+    let paragraph = document.createElement('p');
+    parent.appendChild(paragraph);
+    paragraph.textContent = 'This is show because you click';
+}
