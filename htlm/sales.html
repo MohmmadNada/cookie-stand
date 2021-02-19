@@ -7,13 +7,29 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body id="parent">
+<body>
     <header>
 
     </header>
 
-    <main>
-
+    <main id="parent">
+        <form action="" id="shopForm">
+            <fieldset>
+                <label for="newShopName">Shop Location</label>
+                <input type="text" id="newShopName" name="newShopName">
+                <br>
+                <label for="minCustomers">min. number of customers</label>
+                <input type="number" id="minCustomers" name="minCustomers">
+                <br>
+                <label for="maxCustomers">max. number of customers</label>
+                <input type="number" id="maxCustomers" name="maxCustomers">
+                <br>
+                <label for="avgCookies">avg. number of Cookies</label>
+                <input type="number" id="avgCookies" name="avgCookies">
+                <br><br>
+                <input type="submit" value="Click here to add ">
+            </fieldset>
+        </form>
     </main>
 
     <footer>
