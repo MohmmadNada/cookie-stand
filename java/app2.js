@@ -24,16 +24,18 @@ function ShopName(name, minCustomers, maxCustomers, avgCookies) {
 }
 
 ShopName.prototype.calculateCustomersEachHour = function() {
+
     for (let i = 0; i < hours.length; i++) {
 
-        this.customersEachHour.push(random(this.minCustomers, this.maxCustomers))
+        this.customersEachHour.push(random(this.minCustomers, this.maxCustomers));
 
     }
 }
+
 ShopName.prototype.calculateCookiesEachHour = function() {
     for (let i = 0; i < hours.length; i++) {
         this.cookiesEachHour.push(Math.floor(this.customersEachHour[i] * this.avgCookies));
-        this.totalCookieshEachHour += this.cookiesEachHour[i]
+        this.totalCookieshEachHour += this.cookiesEachHour[i];
     }
 }
 
@@ -44,7 +46,6 @@ let paris = new ShopName("Paris", 20, 38, 2.3);
 let lima = new ShopName("Lima", 2, 16, 4.6);
 
 
-//console.log(lima);
 //make table 
 let parent = document.getElementById("parent")
     //console.log(parent);
@@ -97,8 +98,8 @@ let makeFooter = function() {
     for (let i = 0; i < hours.length; i++) {
         let totalEachHour = 0;
         for (let j = 0; j < shops.length; j++) {
-            totalEachHour += shops[j].cookiesEachHour[j];
-            TotalOfAll += shops[j].cookiesEachHour[j];
+            totalEachHour += shops[j].cookiesEachHour[i];
+            TotalOfAll += shops[j].cookiesEachHour[i];
         }
         footerTh = document.createElement('th');
         footerRow.appendChild(footerTh);
@@ -106,9 +107,11 @@ let makeFooter = function() {
     }
     let finalTh = document.createElement('th');
     footerRow.appendChild(finalTh);
+    finalTh.textContent = TotalOfAll;
 }
+
 makeHeader();
-console.log(parent);
+// console.log(parent);
 //this loop for call methods ,   shops[i] have name of new object after . we call function
 for (let i = 0; i < shops.length; i++) {
     shops[i].calculateCustomersEachHour();
@@ -116,12 +119,3 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].makeCells();
 }
 makeFooter();
-
-let buttunClickHere = getElementById('buttun1');
-buttunClickHere.addEventListener('click', makePargraphForClik);
-
-function makePargraphForClik() {
-    let paragraph = document.createElement('p');
-    parent.appendChild(paragraph);
-    paragraph.textContent = 'This is show because you click';
-}
