@@ -142,11 +142,8 @@ function newShopFun(event) {
     /*for new table */
 
     //make table 
-    let parent = document.getElementById("parent")
-        //console.log(parent);
-    let table = document.createElement('table');
-    parent.appendChild(table);
-
+    //console.log(parent);
+    table.textContent = "";
     //make header row
     // the first and last one alone , betweeen them loop
     function makeHeader() {
