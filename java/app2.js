@@ -118,6 +118,7 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].makeCells();
 }
 makeFooter();
+console.log(parent);
 
 /* for lab10 */
 
@@ -213,5 +214,6 @@ function newShopFun(event) {
         shops[i].makeCells();
     }
     makeFooter();
+    console.log(parent);
 
 }

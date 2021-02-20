@@ -1,3 +1,20 @@
 * {
     box-sizing: border-box;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+#parent table {
+    border: 2px solid rgb(29, 12, 189);
+    width: 50%;
+    text-align: center;
+    margin-left: 250px;
+}
+
+table td {}
+
+form {
+    border: 2px solid rgb(29, 12, 189);
+    width: 50%;
+    margin: 10px;
+    margin-left: 250px;
 }
