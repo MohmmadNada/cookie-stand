@@ -1,20 +1,89 @@
 * {
     box-sizing: border-box;
     font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+body header {
+    margin-left: 18%;
 }
 
 #parent table {
-    border: 2px solid rgb(29, 12, 189);
+    margin-top: 7%;
+    border: solid 1px rgb(255, 255, 255);
+    border: 2px solid rgb(157, 152, 197);
     width: 50%;
     text-align: center;
     margin-left: 250px;
 }
 
-table td {}
-
 form {
-    border: 2px solid rgb(29, 12, 189);
+    margin-top: 10%;
+    border: 2px solid rgb(157, 152, 197);
     width: 50%;
     margin: 10px;
     margin-left: 250px;
+}
+
+input#newShopName {
+    margin-left: 135px;
+    margin-bottom: 7px;
+}
+
+input#minCustomers {
+    margin-left: 38px;
+    margin-bottom: 7px;
+}
+
+input#maxCustomers {
+    margin-left: 35px;
+    margin-bottom: 7px;
+}
+
+input#avgCookies {
+    margin-left: 59px;
+    margin-bottom: 7px;
+}
+
+input[type="submit"] {
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(157, 152, 197);
+    padding-left: 21px;
+    padding-right: 17px;
+    text-align: center;
+    margin-left: 265px;
+    border-radius: 2%;
+}
+
+th {
+    color: rgb(55, 15, 56);
+    border: solid 1px rgb(46, 41, 41);
+    border-radius: 20%;
+    background-color: rgb(157, 152, 197);
+    color: whitesmoke;
+}
+
+td {
+    color: rgb(157, 152, 197);
+    border: solid 1px rgb(46, 41, 41);
+    border-radius: 20%;
+}
+
+td:hover {
+    color: rgb(5, 3, 4);
+}
+
+th:hover {
+    color: rgb(5, 3, 4);
+}
+
+body {
+    background-image: url("../img/pexels-lumn-316466.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
