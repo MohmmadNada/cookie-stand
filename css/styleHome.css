@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'RocknRoll One', sans-serif;
+    margin: 0px;
+}
+
+#familyImg {
+    width: 100%;
+    opacity: 80%;
+}
+
+header h1 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 35px;
+    vertical-align: center;
+}
+
+header {
+    background-color: rgb(152, 179, 228);
+}
+
+#linkToNext {
+    text-decoration: none;
+    padding-left: 50%;
+    text-shadow: 5px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav {
+    font-family: 'Akaya Kanadaka', cursive;
+    display: block;
+}
+
+#salmon {
+    width: 100%;
+}
+
+.imgs {
+    height: 10%;
+}
+
+footer {
+    font-family: 'Akaya Kanadaka', cursive;
+    text-align: center;
+}
+
+footer address {
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+footer p {
+    font-family: 'Akaya Kanadaka', cursive;
+    background-color: rgb(152, 179, 228);
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 19px;
+}
