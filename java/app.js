@@ -351,6 +351,6 @@ const lima = {
 
 lima.calculateCustomersPerHour();
 lima.calCookiesForEachHour();
-paris.render();
-console.log(lima)
-    // finish the 5th profile
+lima.render();
+// console.log(lima)
+// finish the 5th profile
